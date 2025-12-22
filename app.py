@@ -758,10 +758,10 @@ def extract_data_from_pdf(file):
                 "Collection": collection_value,
                 "Colour_SKU": f"{colour} • SKU {sku}",
                 "Style_Merch_Season": (
-                    f"STYLE {style_code.group()} • {style_suffix} • Batch No./"
+                    f"STYLE {style_code.group()} • {style_suffix} • Batch No./ Data e"
                     if style_code else "STYLE UNKNOWN"
                 ),
-                "Batch": f"Data e prodhimit: {batch}",
+                "Batch": f"prodhimit:/ Дата виготовлення: {batch}",
                 "barcode": barcode,
                 "Item_name_EN": item_name_en or "",
                 "Season": season_value
@@ -811,7 +811,7 @@ def format_product_translations(
         'AL', 'BG', 'BiH', 'CZ', 'DE', 'EE',
         'ES', 'GR', 'HR', 'HU', 'IT', 'LT',
         'LV', 'MK', 'PL', 'PT', 'RO', 'RS',
-        'SI', 'SK'
+        'SI', 'SK', 'UA'
     ]
 
     # Build translations
@@ -1125,7 +1125,7 @@ def process_pepco_pdf(uploaded_pdf, extra_order_ids: str | None = None):
 
         if currency_values:
             # Fill currency columns
-            for cur in ['EUR', 'BGN', 'BAM', 'RON', 'CZK', 'MKD', 'RSD', 'HUF']:
+            for cur in ['EUR', 'BGN', 'BAM', 'RON', 'CZK', 'UAH', 'MKD', 'RSD', 'HUF']:
                 df[cur] = currency_values.get(cur, "")
 
             df['PLN'] = format_number(pln_price, 'PLN')
@@ -1138,7 +1138,7 @@ def process_pepco_pdf(uploaded_pdf, extra_order_ids: str | None = None):
                 "Item_classification", "Supplier_name", "today_date",
                 "Collection", "Colour_SKU", "Style_Merch_Season",
                 "Batch", "barcode", "washing_code", "EUR", "BGN",
-                "BAM", "PLN", "RON", "CZK", "MKD", "RSD", "HUF",
+                "BAM", "PLN", "RON", "CZK", "UAH", "MKD", "RSD", "HUF",
                 "product_name", "Dept", "Item_name_English", "Season"
             ]
 
@@ -1305,6 +1305,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
