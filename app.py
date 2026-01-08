@@ -182,7 +182,7 @@ COLLECTION_MAPPING = {
         'DEL MAR': 'COLLECTION_7'
     },
     'og': {  
-        'TRANSITIONAL-GRAFFITIVIBES': 'COLLECTION_0',
+        'TRANSITIONAL_GRAFFITIVIBES': 'COLLECTION_0',
         'COOL STYLE': 'COLLECTION_1',
         'COOL COLLEGE LEAGUE': 'COLLECTION_2',
         'GLAMROCK GIRL': 'COLLECTION_3',
@@ -1313,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
