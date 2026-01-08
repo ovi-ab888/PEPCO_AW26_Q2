@@ -181,7 +181,7 @@ COLLECTION_MAPPING = {
         'COOL GIRL': 'COLLECTION_6',
         'DEL MAR': 'COLLECTION_7'
     },
-    'og': {  # NEW: Older girls outerwear AW26 collections
+    'og': {  
         'TRANSITIONAL-GRAFFITIVIBES': 'COLLECTION_0',
         'COOL STYLE': 'COLLECTION_1',
         'COOL COLLEGE LEAGUE': 'COLLECTION_2',
@@ -1313,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
