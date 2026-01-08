@@ -180,6 +180,15 @@ COLLECTION_MAPPING = {
         'LILALOV': 'COLLECTION_5',
         'COOL GIRL': 'COLLECTION_6',
         'DEL MAR': 'COLLECTION_7'
+    },
+    'og': {  # NEW: Older girls outerwear AW26 collections
+        'TRANSITIONAL-GRAFFITIVIBES': 'COLLECTION_0',
+        'COOL STYLE': 'COLLECTION_1',
+        'COOL COLLEGE LEAGUE': 'COLLECTION_2',
+        'GLAMROCK GIRL': 'COLLECTION_3',
+        'COZYTIME': 'COLLECTION_4',
+        'XMAS & PARTY': 'COLLECTION_5',
+        'DANNY': 'COLLECTION_6'
     }
 }
 
@@ -381,6 +390,8 @@ def get_classification_type(item_class):
 
     if 'younger girls outerwear' in ic:
         return 'yg'
+    if 'older girls outerwear' in ic:  # NEW: older girls
+        return 'og'  # Use 'og' mapping
     if 'baby boys outerwear' in ic:
         return 'b'
     if 'baby girls outerwear' in ic:
@@ -391,8 +402,6 @@ def get_classification_type(item_class):
         return 'd_girls'
     if 'younger boys outerwear' in ic:
         return 'yg'
-    if 'older girls outerwear' in ic:
-        return 'yg'
     if 'older boys outerwear' in ic:
         return 'yg'
     if 'ladies outerwear' in ic:
@@ -401,7 +410,6 @@ def get_classification_type(item_class):
         return 'b'
 
     return None
-
 
 # ---------- Map Item_classification → Dept label ----------
 def map_item_class_to_dept_label(item_class):
@@ -1305,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
