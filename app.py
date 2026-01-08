@@ -5,7 +5,7 @@
 # ---------- PAGE CONFIG (must be at top) ----------
 import streamlit as st
 st.set_page_config(
-    page_title="PEPCO Data Processor",
+    page_title="PEPCO",
     page_icon="🧾",
     layout="wide"
 )
@@ -1305,6 +1305,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
