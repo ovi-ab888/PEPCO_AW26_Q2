@@ -188,7 +188,7 @@ COLLECTION_MAPPING = {
         'GLAMROCK GIRL': 'COLLECTION_3',
         'COZYTIME': 'COLLECTION_4',
         'XMAS & PARTY': 'COLLECTION_5',
-        'DANNY': 'COLLECTION_6'
+        'xxxxxx': 'COLLECTION_6'
     }
 }
 
@@ -1313,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
