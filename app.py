@@ -129,7 +129,7 @@ def check_password():
         return True
 
     # Input box
-    st.text_input("Password", type="password", key="password", on_change=_password_entered)
+    st.text_input("ssword", type="password", key="password", on_change=_password_entered)
 
     # Wrong
     if st.session_state.get("password_correct") is False:
@@ -1313,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
