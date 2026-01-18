@@ -149,18 +149,18 @@ WASHING_CODES = {
 
 COLLECTION_MAPPING = {
     'b': {
-        'CROCO CLUB': 'MODERN 1',
-        'LITTLE SAILOR': 'MODERN 2',
-        'EXPLORE THE WORLD': 'MODERN 3',
-        'JURASIC ADVENTURE': 'MODERN 4',
-        'WESTERN SPIRIT': 'CLASSIC 1',
-        'SUMMER FUN': 'CLASSIC 2'
+        'xxxxx': 'MODERN 1',
+        'xxxxx': 'MODERN 2',
+        'xxxxx': 'MODERN 3',
+        'xxxxx': 'MODERN 4',
+        'xxxxx': 'CLASSIC 1',
+        'xxxxx': 'CLASSIC 2'
     },
     'a': {
-        'Rainbow Girl': 'MODERN 1',
-        'NEONS PICNIC': 'MODERN 2',
-        'COUNTRY SIDE': 'ROMANTIC 2',
-        'ESTER GARDENG': 'ROMANTIC 3'
+        'xxxxx': 'MODERN 1',
+        'xxxxx': 'MODERN 2',
+        'xxxxx': 'ROMANTIC 2',
+        'xxxxx': 'ROMANTIC 3'
     },
     'd': {
         'LITTLE TREASURE': 'MODERN 1',
@@ -168,18 +168,18 @@ COLLECTION_MAPPING = {
         'EXOTIC ANIMALS': 'CLASSIC 2'
     },
     'd_girls': {
-        'SWEEET PASTELS': 'MODERN 1',
-        'PORCELAIN': 'ROMANTIC 2',
-        'SUMMER VIBE': 'ROMANTIC 3'
+        'xxxxx': 'MODERN 1',
+        'xxxxx': 'ROMANTIC 2',
+        'xxxxx': 'ROMANTIC 3'
     },
     'yg': {
-        'CUTE_JUMP': 'COLLECTION_1',
-        'SWEET_HEART': 'COLLECTION_2',
-        'DAISY': 'COLLECTION_3',
-        'SPECIAL OCC': 'COLLECTION_4',
-        'LILALOV': 'COLLECTION_5',
-        'COOL GIRL': 'COLLECTION_6',
-        'DEL MAR': 'COLLECTION_7'
+        'xxxxx': 'COLLECTION_1',
+        'xxxxx': 'COLLECTION_2',
+        'xxxxx': 'COLLECTION_3',
+        'xxxxx': 'COLLECTION_4',
+        'xxxxx': 'COLLECTION_5',
+        'xxxxx': 'COLLECTION_6',
+        'xxxxx': 'COLLECTION_7'
     },
     'og': {  
         'TRANSITIONAL_GRAFFITI VIBES': 'COLLECTION_0',
@@ -490,14 +490,14 @@ def clean_item_name_english(name: str) -> str:
     # লম্বা phrase আগে, তারপর ছোট – যেন "baby girl basic" থাকলে
     # শুধু "baby girl" কেটে না যায়।
     prefixes = [
-        "baby girl basic",
-        "baby boy basic",
-        "baby girl",
-        "baby boy",
-        "girl's",
-        "boy's",
-        "men's",
-        "women's",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
+        "xxxxx",
     ]
 
     for p in prefixes:
@@ -1313,6 +1313,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
