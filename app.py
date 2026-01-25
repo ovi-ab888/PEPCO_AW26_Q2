@@ -181,6 +181,15 @@ COLLECTION_MAPPING = {
         'xxxxx': 'COLLECTION_6',
         'xxxxx': 'COLLECTION_7'
     },
+    'ob': {
+        'STREET RACING': 'COLLECTION 1',
+        'CAMPUS LIFE': 'COLLECTION 2',
+        'DIGITAL RIDE': 'COLLECTION 3',
+        'XMAS': 'COLLECTION 4',
+        'xxxxx': 'COLLECTION 5',
+        'xxxxx': 'COLLECTION 6',
+        'xxxxx': 'COLLECTION 7'
+    },
     'og': {  
         'TRANSITIONAL_GRAFFITI VIBES': 'COLLECTION_0',
         'COOL STYLE': 'COLLECTION_1',
@@ -392,6 +401,8 @@ def get_classification_type(item_class):
         return 'yg'
     if 'older girls outerwear' in ic:  # NEW: older girls
         return 'og'  # Use 'og' mapping
+     if 'Older boys outerwear' in ic:  # NEW: older boy
+        return 'ob'  # Use 'ob' mapping
     if 'baby boys outerwear' in ic:
         return 'b'
     if 'baby girls outerwear' in ic:
@@ -1313,6 +1324,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
