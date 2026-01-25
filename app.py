@@ -399,10 +399,10 @@ def get_classification_type(item_class):
 
     if 'younger girls outerwear' in ic:
         return 'yg'
-    if 'older girls outerwear' in ic:  # NEW: older girls
-        return 'og'  # Use 'og' mapping
-     if 'Older boys outerwear' in ic:  # NEW: older boy
-        return 'ob'  # Use 'ob' mapping
+    if 'older girls outerwear' in ic:
+        return 'og'
+    if 'older boys outerwear' in ic:
+        return 'ob'
     if 'baby boys outerwear' in ic:
         return 'b'
     if 'baby girls outerwear' in ic:
@@ -413,14 +413,13 @@ def get_classification_type(item_class):
         return 'd_girls'
     if 'younger boys outerwear' in ic:
         return 'yg'
-    if 'older boys outerwear' in ic:
-        return 'yg'
     if 'ladies outerwear' in ic:
         return 'a'
     if 'mens outerwear' in ic:
         return 'b'
 
     return None
+
 
 # ---------- Map Item_classification → Dept label ----------
 def map_item_class_to_dept_label(item_class):
@@ -1324,6 +1323,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
