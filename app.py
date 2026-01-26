@@ -1241,7 +1241,7 @@ def pepco_section():
             st.session_state.uploader_key += 1
             # ❌ st.rerun() REMOVED (callback auto reruns)
 
-        st.button("🔄 New upload", on_click=_reset_all)
+        st.button("🆕 Upload New File", on_click=_reset_all)
 
     # File uploader (multi PDF)
     uploaded_pdfs = st.file_uploader(
@@ -1325,6 +1325,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
