@@ -178,11 +178,13 @@ COLLECTION_MAPPING = {
 
     # ---------------- Younger Girls ----------------
     "yg": {  # younger girls outerwear
-        "XXXXX_1": "COLLECTION_1",
-        "XXXXX_2": "COLLECTION_2",
-        "XXXXX_3": "COLLECTION_3",
-        "XXXXX_4": "COLLECTION_4",
-        "XXXXX_5": "COLLECTION_5",
+        "PONY RAINBOW": "COLLECTION 1",
+        "MEOWSTORY": "COLLECTION 2",
+        "BTS": "COLLECTION 3",
+        "COZY AUTUMN": "COLLECTION 4",
+        "WINTER BALLET": "COLLECTION 5",
+        "XMAS": "COLLECTION 6",
+        "PARTY": "COLLECTION 7",
     },
 
     # ---------------- Older Girls ----------------
@@ -1356,6 +1358,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
