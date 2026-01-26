@@ -1237,8 +1237,9 @@ def pepco_section():
                 )):
                     st.session_state.pop(k, None)
 
+            # Force uploader refresh
             st.session_state.uploader_key += 1
-            st.rerun()
+            # ❌ st.rerun() REMOVED (callback auto reruns)
 
         st.button("🔄 New upload", on_click=_reset_all)
 
@@ -1276,6 +1277,7 @@ def pepco_section():
 
         concatenated_ids = "+".join(other_ids) if other_ids else ""
         process_pepco_pdf(primary_pdf, extra_order_ids=concatenated_ids)
+
 
 
 # ================================================================
@@ -1323,6 +1325,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
