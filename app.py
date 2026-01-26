@@ -148,58 +148,89 @@ WASHING_CODES = {
 }
 
 COLLECTION_MAPPING = {
-    'b': {
-        'xxxxx': 'MODERN 1',
-        'xxxxx': 'MODERN 2',
-        'xxxxx': 'MODERN 3',
-        'xxxxx': 'MODERN 4',
-        'xxxxx': 'CLASSIC 1',
-        'xxxxx': 'CLASSIC 2'
+    # ---------------- Baby Girls ----------------
+    "a": {  # baby girls outerwear
+        "CUTE BEAR": "MODERN 1",
+        "SUMMER CHERRY": "ROMANTIC 1",
+        "AUTUMN": "ROMANTIC 2",
     },
-    'a': {
-        'xxxxx': 'MODERN 1',
-        'xxxxx': 'MODERN 2',
-        'xxxxx': 'ROMANTIC 2',
-        'xxxxx': 'ROMANTIC 3'
+
+    "d_girls": {  # baby girls essentials
+        "FLOWER MOUSE": "MODERN 1",
+        "LITTEL FOREST": "ROMANTIC 1",
     },
-    'd': {
-        'LITTLE TREASURE': 'MODERN 1',
-        'DINO FRIENDS': 'CLASSIC 1',
-        'EXOTIC ANIMALS': 'CLASSIC 2'
+
+    # ---------------- Baby Boys ----------------
+    "b": {  # baby boys outerwear
+        "DOGS&FRIENDS": "MODERN 1",
+        "EXPOLORE THE MOUNTINE": "MODERN 2",
+        "SUMMER FUN": "MODERN 4",
+        "COOL TRIP": "CLASSIC 1",
+        "COLLEGE BEARS": "CLASSIC 1",
     },
-    'd_girls': {
-        'xxxxx': 'MODERN 1',
-        'xxxxx': 'ROMANTIC 2',
-        'xxxxx': 'ROMANTIC 3'
+
+    "d": {  # baby boys essentials
+        "DOGS FRIENDS": "CLASSIC 1",
+        "FOREST STORY": "MODERN 1",
+        "LITTLE DREAMER": "MODERN 1",
+        "X-MAS": "CLASSIC 2",
     },
-    'yg': {
-        'xxxxx': 'COLLECTION_1',
-        'xxxxx': 'COLLECTION_2',
-        'xxxxx': 'COLLECTION_3',
-        'xxxxx': 'COLLECTION_4',
-        'xxxxx': 'COLLECTION_5',
-        'xxxxx': 'COLLECTION_6',
-        'xxxxx': 'COLLECTION_7'
+
+    # ---------------- Younger Girls ----------------
+    "yg": {  # younger girls outerwear
+        "XXXXX_1": "COLLECTION_1",
+        "XXXXX_2": "COLLECTION_2",
+        "XXXXX_3": "COLLECTION_3",
+        "XXXXX_4": "COLLECTION_4",
+        "XXXXX_5": "COLLECTION_5",
     },
-    'ob': {
-        'STREET RACING': 'COLLECTION 1',
-        'CAMPUS LIFE': 'COLLECTION 2',
-        'DIGITAL RIDE': 'COLLECTION 3',
-        'XMAS': 'COLLECTION 4',
-        'xxxxx': 'COLLECTION 5',
-        'xxxxx': 'COLLECTION 6',
-        'xxxxx': 'COLLECTION 7'
+
+    # ---------------- Older Girls ----------------
+    "og": {  # older girls outerwear
+        "TRANSITIONAL_GRAFFITI VIBES": "COLLECTION_0",
+        "COOL STYLE": "COLLECTION_1",
+        "COOL COLLEGE LEAGUE": "COLLECTION_2",
+        "GLAMROCK GIRL": "COLLECTION_3",
+        "COZYTIME": "COLLECTION_4",
+        "XMAS & PARTY": "COLLECTION_5",
     },
-    'og': {  
-        'TRANSITIONAL_GRAFFITI VIBES': 'COLLECTION_0',
-        'COOL STYLE': 'COLLECTION_1',
-        'COOL COLLEGE LEAGUE': 'COLLECTION_2',
-        'GLAMROCK GIRL': 'COLLECTION_3',
-        'COZYTIME': 'COLLECTION_4',
-        'XMAS & PARTY': 'COLLECTION_5',
-        'xxxxxx': 'COLLECTION_6'
-    }
+
+    # ---------------- Younger Boys ----------------
+    "yb": {  # younger boys outerwear
+        "XXXXX_1": "COLLECTION_1",
+        "XXXXX_2": "COLLECTION_2",
+        "XXXXX_3": "COLLECTION_3",
+        "XXXXX_4": "COLLECTION_4",
+        "XXXXX_5": "COLLECTION_5",
+    },
+
+    # ---------------- Older Boys ----------------
+    "ob": {  # older boys outerwear
+        "STREET RACING": "COLLECTION_1",
+        "CAMPUS LIFE": "COLLECTION_2",
+        "DIGITAL RIDE": "COLLECTION_3",
+        "XMAS": "COLLECTION_4",
+    },
+
+    # ---------------- Ladies ----------------
+    "l": {  # ladies outerwear
+        "XXXXX_1": "COLLECTION_1",
+        "XXXXX_2": "COLLECTION_2",
+        "XXXXX_3": "COLLECTION_3",
+        "XXXXX_4": "COLLECTION_4",
+        "XXXXX_5": "COLLECTION_5",
+    },
+
+    # ---------------- Mens ----------------
+    "m": {  # mens outerwear
+        "XXXXX_1": "COLLECTION_1",
+        "XXXXX_2": "COLLECTION_2",
+        "XXXXX_3": "COLLECTION_3",
+        "XXXXX_4": "COLLECTION_4",
+        "XXXXX_5": "COLLECTION_5",
+    },
 }
+
 
 
 # ================================================================
@@ -401,22 +432,22 @@ def get_classification_type(item_class):
         return 'yg'
     if 'older girls outerwear' in ic:
         return 'og'
+    if 'younger boys outerwear' in ic:
+        return 'yb'
     if 'older boys outerwear' in ic:
         return 'ob'
-    if 'baby boys outerwear' in ic:
-        return 'b'
     if 'baby girls outerwear' in ic:
         return 'a'
-    if 'baby boys essentials' in ic:
-        return 'd'
+    if 'baby boys outerwear' in ic:
+        return 'b'
     if 'baby girls essentials' in ic:
         return 'd_girls'
-    if 'younger boys outerwear' in ic:
-        return 'yg'
+    if 'baby boys essentials' in ic:
+        return 'd'
     if 'ladies outerwear' in ic:
-        return 'a'
+        return 'l'
     if 'mens outerwear' in ic:
-        return 'b'
+        return 'm'
 
     return None
 
@@ -1325,6 +1356,7 @@ def main():
 # ================================================================
 if __name__ == "__main__":
     main()
+
 
 
 
