@@ -1232,7 +1232,7 @@ def process_pepco_pdf(uploaded_pdf, extra_order_ids: str | None = None):
             style_val = first_row_df.get("Style", "UNKNOWN")
 
             custom_filename = (
-                f"PEPCO_{season_val}_{sku_val}_Sticker "
+                f"PEPCO_{season_val}_{sku_val}_Swingtag "
                 f"{supplier_code}_00_{style_val}.csv"
             )
 
